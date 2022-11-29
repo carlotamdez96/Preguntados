@@ -339,11 +339,11 @@
 
          div.resultados {
             display: flex;
-      
             position: relative;
+     
             align-items: center;
             justify-content: center;
-           
+        
         }
         /* article .h3Correcion {
             display: flex;
@@ -357,6 +357,14 @@
             
         } */
      
+        .nuevoIntento{
+            display: flex;
+            position: relative;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+            top: 350px;
+        }
         .cuerpoCorrecion input{
             display: none;
         }
@@ -405,17 +413,26 @@
        .resultadoNotas div{
         display: flex;
         justify-content: center;
-        align-items: flex-start;
+        align-items: center;
         flex-direction: column;
+        gap: 15px;
         width: 100%;
         height: 260px;
         border-radius: 7%;
         background-color: rgba(214, 214, 214, 0.405);
         backdrop-filter: blur(3px);
+        text-shadow: 0.1em 0.1em 0.2em black;
+        
+
        }
        .resultadoNotas h2{
         font-size: 2.2em;
         font-family: var(--fuente-principal);
         color: white;
         letter-spacing: 15px;
+       }
+       .resultadoNotas p{
+        font-size: 1.7em;
+        color: white;
+        text-transform: capitalize;
        }

@@ -11,6 +11,7 @@ window.onload = function(){
         const encabezado = document.querySelector("header");
         const seccion = document.querySelector("section");
         const panelConImagenes = document.querySelector(".panelConImagenes");
+        const contenedora = document.querySelector(".contenedora");
         
         
         
@@ -183,7 +184,7 @@ window.onload = function(){
         }
       
         
-
+       
         //Funcion
         function corrige(){
 
@@ -217,8 +218,10 @@ window.onload = function(){
             let divContenidoCorrecion = document.createElement("div");
             divContenidoCorrecion.classList.add("cuerpoCorrecion");
             
-        
-        
+            var contadorCorrectas=0;
+            var contadorIncorrectas=0;
+            var contChechBox=0;
+            
          //   Lo siguiente será crear la parte de las preguntas
           let divBloqueContenidoCorregir = seccion.querySelectorAll("article");
                 /* Mirar a ver el numero de la pregunta igual hay q mterlo en un span
@@ -232,12 +235,10 @@ window.onload = function(){
                     var spanCorrecion = document.createElement("span");
                     articuloClonado.firstChild.appendChild(spanCorrecion);
                //Aqui recorro las respuestas, y comprobare si son correctas o incorrectas y le cambiare los estilos
-
+              
                 for (let respuesta of articuloClonado.children[1].children) {
-                    var contadorCorrectas=0;
-                    var contadorIncorrectas=0;
-                    let contadorRespuestaCorrecta=0;
-                    let contChechBox=0;
+                    var contadorRespuestaCorrecta=0;
+                    
                     if(respuesta.children[0].value=="si"){
                         respuesta.children[1].innerHTML+=`<i class="fa-sharp fa-solid fa-check"></i>`;
                          contadorRespuestaCorrecta++;
@@ -252,6 +253,7 @@ window.onload = function(){
                             contChechBox++;
                             if(contChechBox==contadorRespuestaCorrecta){
                                 spanCorrecion.textContent="1";
+                                contadorCorrectas++;
                             }
                         }
                         
@@ -294,23 +296,46 @@ window.onload = function(){
             fragment.appendChild(divNotas);
                 //Creo un boton para realizar un nuevo intento
                 let divResultados = document.createElement("div");
-                    divResultados.classList.add("resultados");
-                    let boton = document.createElement("button");
-                    boton.textContent="Nuevo intento"
+                    divResultados.classList.add("nuevoIntento");
+                    var boton = document.createElement("button");
+                    boton.textContent="Nuevo intento";
+                    var boton2 = document.createElement("button");
+                    boton2.textContent="Volver";
+                    divResultados.appendChild(boton2);
                     divResultados.appendChild(boton);
                     divContenidoCorrecion.appendChild(divResultados);
-
+                    boton2.addEventListener("click",retornoEstado);
+                    boton.addEventListener("click",nuevoCuestionario);
                 fragment.appendChild(divContenidoCorrecion);
 
-
+                
+                const nuevoTest= document.querySelector("section").cloneNode(true);
+                seccion.style.display="none";
+                const nuevaSeccion = document.createElement("section");
+                nuevaSeccion.classList.add("nueva");
+                document.body.appendChild(nuevaSeccion);
             /* borro todo lo que estaba en seccion anteriormente*/
-            seccion.innerText="";
+           // seccion.innerText="";
             /*Añado el fragment a la seccion*/
-            seccion.appendChild(fragment);
+            nuevaSeccion.appendChild(fragment);
+            
+        function retornoEstado(){
+            nuevaSeccion.style.display="none";
+            contenedora.appendChild(seccion);
+            seccion.style.display="block";
+            navegadorTransparente.style.display= "none";
+        }
+
+        function nuevoCuestionario(){
+            nuevaSeccion.innerHTML="";
+            document.body.appendChild(nuevoTest);
+            navegadorTransparente.style.display= "none";
+        }
         
         }
 
         
+
     
     
     
