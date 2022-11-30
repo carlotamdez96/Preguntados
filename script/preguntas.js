@@ -111,10 +111,6 @@
                         {
                             "respuesta":"Pinta",
                             "correcta":"si"
-                        },
-                        {
-                            "respuesta":"Niña",
-                            "correcta":"si"
                         }
                     ]
                 },
@@ -364,8 +360,8 @@
                                 "correcta":"si"
                             },
                             {
-                                "respuesta":"Alaska",
-                                "correcta":"si"
+                                "respuesta":"España",
+                                "correcta":""
                             }
                         ]
                          
@@ -433,7 +429,228 @@
         
                 ]
             },
-            /*Segundo Objeto de categoria */
+            //Siguiente objeto
+            { 
+                "imagen":"arte.png",
+                "categoria" : "Arte",
+                "preguntas": [ //Las preguntas estarán en un Array de objetos
+        
+                /* Primer Objeto que será la primera pregunta */
+                {
+                    "tipo":"simple",
+                    "pregunta":"¿Quién escribió la Ilíada y la Odisea?",
+                    "respuestas": [
+                  
+                        {
+                            "respuesta":"Homero",
+                            "correcta":"si"
+                        },
+                        {
+                            "respuesta":"Sófocles",
+                            "correcta":""
+        
+                        },
+                        {
+                            "respuesta":"Esquilo",
+                            "correcta":""
+                        }
+                    
+                    ]
+        
+                },
+                /*Segunda Pregunta*/
+                {
+                    "tipo":"simple",
+                    "pregunta":" ¿Quién pintó el 'Guernica'?",
+                    "respuestas":[
+                        {
+                            "respuesta":"Picasso",
+                            "correcta":"si"
+                        },
+                        {
+                            "respuesta":"Dalí",
+                            "correcta":""
+                        },
+                        {
+                            "respuesta":"Van Gogh",
+                            "correcta":""
+                        }
+                    ]
+                },
+                /*Tercera pregunta*/
+                {
+                    "tipo":"simple",
+                    "pregunta":"¿De qué estilo arquitectónico es la catedral de Notre Dame?",
+                    "respuestas":[
+                        /*Será un Array de Objetos porque habrá mas de una respuesta correcta y hay que guardar un propiedad para saber si es correcta o no*/
+                        {
+                            "respuesta":"Gótico",
+                            "correcta":"si"
+                        },
+                        {
+                            "respuesta":"Románico",
+                            "correcta":""
+                        },
+                        {
+                            "respuesta":"Dórico",
+                            "correcta":""
+                        },
+                        {
+                            "respuesta":"Italia",
+                            "correcta":""
+                        } 
+                    ]
+        
+                },
+                /*Cuarta Pregunta*/
+                {
+                    "tipo":"simple",
+                    "pregunta": " ¿De qué obra de Shakespeare forma parte el soliloquio “Ser o no ser, esa es la cuestión”?",
+                    "respuestas":[
+                        {
+                            "respuesta":"Romeo y Julieta",
+                            "correcta":""
+                        },
+                        {
+                            "respuesta":"El mercader de Venecia",
+                            "correcta":""
+                        },
+                        {
+                            "respuesta":"Hamlet",
+                            "correcta":"si"
+                        }
+                    ]
+        
+                },
+                /*Quinta pregunta */
+                {
+                    "tipo":"multiple",
+                    "pregunta":"Nombre de los barcos que componían la expedición de Colón",
+                    "respuestas":[
+                        {
+                            "respuesta":"Santa Maria",
+                            "correcta":"si"
+                        },
+                        {
+                            "respuesta":"Triana",
+                            "correcta":""
+                        },
+                        {
+                            "respuesta":"Pinta",
+                            "correcta":"si"
+                        },
+                        {
+                            "respuesta":"Niña",
+                            "correcta":"si"
+                        }
+                    ]
+                },
+                /*Sexta Pregunta*/
+                {
+                    "tipo":"simple",
+                    "pregunta":" ¿Quién escribió 'La colmena'?",
+                    "respuestas":[
+                        {
+                            "respuesta":"Cervantes",
+                            "correcta":""
+                        },
+                        {
+                            "respuesta":"Camilo José Cela",
+                            "correcta":"si"
+        
+                        },
+                        {
+                            "respuesta":"Unamuno",
+                            "correcta":""
+                        }
+                    ]
+                },
+                //Septima pregunta
+                {
+                    "tipo":"simple",
+                    "pregunta":"¿Cuál es el país con más habitantes del mundo?",
+                    "respuestas":[
+                        {
+                            "respuesta":"España",
+                            "correcta":""
+                        },
+                        {
+                            "respuesta":"China",
+                            "correcta":"si"
+        
+                        },
+                        {
+                            "respuesta":"Italia",
+                            "correcta":""
+                        }
+                    ]
+                },
+                //Optava
+                {
+                    "tipo":"simple",
+                    "pregunta":"¿Dónde está Transilvania?",
+                    "respuestas":[
+                        {
+                            "respuesta":"Bulgaria",
+                            "correcta":""
+                        },
+                        {
+                            "respuesta":"Rumania",
+                            "correcta":"si"
+        
+                        },
+                        {
+                            "respuesta":"Grecia",
+                            "correcta":""
+                        }
+                    ]
+                },
+                //Novena
+                {
+                    "tipo":"simple",
+                    "pregunta":" ¿En qué año cayó el muro de Berlín?",
+                    "respuestas":[
+                        {
+                            "respuesta":"1979",
+                            "correcta":""
+                        },
+                        {
+                            "respuesta":"1989",
+                            "correcta":"si"
+        
+                        },
+                        {
+                            "respuesta":"1879",
+                            "correcta":""
+                        }
+                    ]
+                },
+                //Decima
+                {
+                    "tipo":"simple",
+                    "pregunta":"¿Qué día es la fiesta nacional de los Estados Unidos?",
+                    "respuestas":[
+                        {
+                            "respuesta":"7 de Julio",
+                            "correcta":""
+                        },
+                        {
+                            "respuesta":"4 de Julio",
+                            "correcta":"si"
+        
+                        },
+                        {
+                            "respuesta":"5 de Julio",
+                            "correcta":""
+                        }
+                    ]
+                }
+        
+                ]
+        
+        
+            },
+            /*Tecer Objeto de categoria */
             {
                 "imagen":"entreEntre.png",
                 "categoria":"Entretenimiento",
@@ -643,6 +860,7 @@
         
                 ]
             }
+            
         
             
         

@@ -218,7 +218,7 @@ window.onload = function(){
             let divContenidoCorrecion = document.createElement("div");
             divContenidoCorrecion.classList.add("cuerpoCorrecion");
             
-            var contadorCorrectas=0;
+            var contadorCorrectas=1;
             var contadorIncorrectas=0;
             var contChechBox=0;
             
