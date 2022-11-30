@@ -304,8 +304,8 @@ window.onload = function(){
                     divResultados.appendChild(boton2);
                     divResultados.appendChild(boton);
                     divContenidoCorrecion.appendChild(divResultados);
-                    boton2.addEventListener("click",retornoEstado);
-                    boton.addEventListener("click",nuevoCuestionario);
+                    boton2.addEventListener("click",nuevoCuestionario);
+                    boton.addEventListener("click",retornoEstado);
                 fragment.appendChild(divContenidoCorrecion);
 
                 
@@ -320,13 +320,26 @@ window.onload = function(){
             nuevaSeccion.appendChild(fragment);
             
         function retornoEstado(){
+            window.scrollTo({
+                top:0,
+                left:0,
+                behavior:'smooth'
+            });
+            
             nuevaSeccion.style.display="none";
             contenedora.appendChild(seccion);
             seccion.style.display="block";
+            seccion.style.marginLeft="150px";
+            seccion.style.width="100%";
             navegadorTransparente.style.display= "none";
         }
 
         function nuevoCuestionario(){
+            window.scrollTo({
+                top:0,
+                left:0,
+                behavior:'smooth'
+            });
             nuevaSeccion.innerHTML="";
             document.body.appendChild(nuevoTest);
             navegadorTransparente.style.display= "none";

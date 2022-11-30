@@ -137,6 +137,86 @@
                             "correcta":""
                         }
                     ]
+                },
+                //Septima pregunta
+                {
+                    "tipo":"simple",
+                    "pregunta":"¿Cuál es el país con más habitantes del mundo?",
+                    "respuestas":[
+                        {
+                            "respuesta":"España",
+                            "correcta":""
+                        },
+                        {
+                            "respuesta":"China",
+                            "correcta":"si"
+        
+                        },
+                        {
+                            "respuesta":"Italia",
+                            "correcta":""
+                        }
+                    ]
+                },
+                //Optava
+                {
+                    "tipo":"simple",
+                    "pregunta":"¿Dónde está Transilvania?",
+                    "respuestas":[
+                        {
+                            "respuesta":"Bulgaria",
+                            "correcta":""
+                        },
+                        {
+                            "respuesta":"Rumania",
+                            "correcta":"si"
+        
+                        },
+                        {
+                            "respuesta":"Grecia",
+                            "correcta":""
+                        }
+                    ]
+                },
+                //Novena
+                {
+                    "tipo":"simple",
+                    "pregunta":" ¿En qué año cayó el muro de Berlín?",
+                    "respuestas":[
+                        {
+                            "respuesta":"1979",
+                            "correcta":""
+                        },
+                        {
+                            "respuesta":"1989",
+                            "correcta":"si"
+        
+                        },
+                        {
+                            "respuesta":"1879",
+                            "correcta":""
+                        }
+                    ]
+                },
+                //Decima
+                {
+                    "tipo":"simple",
+                    "pregunta":"¿Qué día es la fiesta nacional de los Estados Unidos?",
+                    "respuestas":[
+                        {
+                            "respuesta":"7 de Julio",
+                            "correcta":""
+                        },
+                        {
+                            "respuesta":"4 de Julio",
+                            "correcta":"si"
+        
+                        },
+                        {
+                            "respuesta":"5 de Julio",
+                            "correcta":""
+                        }
+                    ]
                 }
         
                 ]
@@ -269,7 +349,297 @@
                             }
                         ]
                          
+                    },
+                    //Septima pregunta
+                    {
+                        "tipo":"multiple",
+                        "pregunta":" ¿Dónde podemos ver las auroras boreales?",
+                        "respuestas":[
+                            {
+                                "respuesta":"Canadá",
+                                "correcta":"si"
+                            },
+                            {
+                                "respuesta":"Noruega",
+                                "correcta":"si"
+                            },
+                            {
+                                "respuesta":"Alaska",
+                                "correcta":"si"
+                            }
+                        ]
+                         
+                    },
+                    //Octava pregunta
+                    {
+                        "tipo":"simple",
+                        "pregunta":" ¿Cuál es el río más largo de la Península Ibérica?",
+                        "respuestas":[
+                            {
+                                "respuesta":"Tajo",
+                                "correcta":"si"
+                            },
+                            {
+                                "respuesta":"Nalón",
+                                "correcta":""
+                            },
+                            {
+                                "respuesta":"Ebro",
+                                "correcta":""
+                            }
+                        ]
+                         
+                    },
+                    //Novena pregunta
+                    {
+                        "tipo":"simple",
+                        "pregunta":"¿Cuántos océanos hay en la Tierra?",
+                        "respuestas":[
+                            {
+                                "respuesta":"6",
+                                "correcta":""
+                            },
+                            {
+                                "respuesta":"5",
+                                "correcta":"si"
+                            },
+                            {
+                                "respuesta":"7",
+                                "correcta":""
+                            }
+                        ]
+                         
+                    },
+                    {
+                        "tipo":"simple",
+                        "pregunta":"¿Cuántos mares existen en la Tierra?",
+                        "respuestas":[
+                            {
+                                "respuesta":"70",
+                                "correcta":""
+                            },
+                            {
+                                "respuesta":"60",
+                                "correcta":"si"
+                            },
+                            {
+                                "respuesta":"40",
+                                "correcta":""
+                            }
+                        ]
+                         
                     }
+
+        
+                ]
+            },
+            /*Segundo Objeto de categoria */
+            {
+                "imagen":"entreEntre.png",
+                "categoria":"Entretenimiento",
+                "preguntas":[
+                    /*Primera Pregunta*/
+                    {
+                        "tipo":"simple",
+                        "pregunta":" ¿A quién interpretaba John Travolta en 'Grease'?",
+                        "respuestas":[
+                            {
+                                "respuesta":"Kenickie",
+                                "correcta":""
+                            },
+                            {
+                                "respuesta":"Danny Zuko",
+                                "correcta":"si"
+                            },
+                            {
+                                "respuesta":"Eugene Felnic",
+                                "correcta":""
+                            }
+                        ]
+        
+                    },
+                    /*Segunda pregunta*/
+                    {
+                        "tipo":"simple",
+                        "pregunta":" ¿Qué conocido cómico imitó a Hitler en la película 'El Gran Dictador'?",
+                        "respuestas":[
+                            {
+                                "respuesta":"Charles Chaplin",
+                                "correcta":"si"
+                            },
+                            {
+                                "respuesta":"Jim Carrey",
+                                "correcta":""
+                            },
+                            {
+                                "respuesta":"Rodney Dangerfield",
+                                "correcta":""
+                            }
+                        ]
+        
+                    },
+                    /*Tercera Pregunta*/
+                    {
+                        "tipo":"multiple",
+                        "pregunta":" ¿Quienes forman el famoso  grupo musical Queen?",
+                        "respuestas":[
+                            {
+                                "respuesta":"Freddie Mercury",
+                                "correcta":"si"
+                            },
+                            {
+                                "respuesta":"Brian May",
+                                "correcta":"si"
+                            },
+                            {
+                                "respuesta":"John Bogie",
+                                "correcta":""
+                            }
+        
+                        ]
+                    },
+                    /*Cuarta Pregunta */
+                    {
+                        "tipo":"simple",
+                        "pregunta":"¿Cómo se llama la ciudad donde se encuentra el Mago de Oz?",
+                        "respuestas":[
+                            {
+                                "respuesta":"Ciudad Esmeralda",
+                                "correcta":"si"
+                            },
+                            {
+                                "respuesta":"Ciudad Amarilla",
+                                "correcta":""
+                            },
+                            {
+                                "respuesta":"Ciudad Turquesa",
+                                "correcta":""
+                            }
+                        ]
+        
+                    },
+        
+                    /*Quinta Pregunta*/
+                    {
+                        "tipo":"simple",
+                        "pregunta":" ¿Cuáles fueron los tres primeros componentes de 'Los payasos de la tele'?",
+                        "respuestas":[
+                            {
+                                "respuesta":"Rody, Fofó y Miliki",
+                                "correcta":""
+                            },
+                            {
+                                "respuesta":"Gaby, Fofó y Miliki",
+                                "correcta":"si"
+                            },
+                            {
+                                "respuesta":"Gaby, Fofó y Rody",
+                                "correcta":""
+                            }
+        
+                        ]
+        
+                    },
+                    /*Sexta pregunta*/
+                    {
+                        "tipo":"simple",
+                        "pregunta":"¿Cómo se llama la protagonista de la saga de videojuegos 'The Legend of Zelda'?",
+                        "respuestas":[
+                            {
+                                "respuesta":"Link",
+                                "correcta":"si"
+                            },
+                            {
+                                "respuesta":"Pink",
+                                "correcta":""
+                            },
+                            {
+                                "respuesta":"Zelda",
+                                "correcta":""
+                            }
+                        ]
+                         
+                    },
+                    //Septima pregunta
+                    {
+                        "tipo":"multiple",
+                        "pregunta":" ¿Cómo se llama el protagonista de la serie de animación japonesa 'Cowboy Bebop'?",
+                        "respuestas":[
+                            {
+                                "respuesta":"Spike",
+                                "correcta":"si"
+                            },
+                            {
+                                "respuesta":"Spike Spiegel",
+                                "correcta":"si"
+                            },
+                            {
+                                "respuesta":"Spile",
+                                "correcta":""
+                            }
+                        ]
+                         
+                    },
+                    //Octava pregunta
+                    {
+                        "tipo":"simple",
+                        "pregunta":" ¿Qué famoso youtuber hispanohablante tiene su propia serie de animación?",
+                        "respuestas":[
+                            {
+                                "respuesta":" El Rubius",
+                                "correcta":"si"
+                            },
+                            {
+                                "respuesta":"Mikecrack",
+                                "correcta":""
+                            },
+                            {
+                                "respuesta":"AuronPlay",
+                                "correcta":""
+                            }
+                        ]
+                         
+                    },
+                    //Novena pregunta
+                    {
+                        "tipo":"simple",
+                        "pregunta":"¿Qué serie producida por Netflix tiene como uno de sus antagonistas principales una entidad llamada 'Demogorgon'?",
+                        "respuestas":[
+                            {
+                                "respuesta":"The Rain",
+                                "correcta":""
+                            },
+                            {
+                                "respuesta":"Stranger Things",
+                                "correcta":"si"
+                            },
+                            {
+                                "respuesta":"Dark",
+                                "correcta":""
+                            }
+                        ]
+                         
+                    },
+                    {
+                        "tipo":"simple",
+                        "pregunta":"¿Cómo se llama la madre de Simba en la película de Disney “El Rey León”?",
+                        "respuestas":[
+                            {
+                                "respuesta":"Samba",
+                                "correcta":""
+                            },
+                            {
+                                "respuesta":"Sarabi",
+                                "correcta":"si"
+                            },
+                            {
+                                "respuesta":"Sina",
+                                "correcta":""
+                            }
+                        ]
+                         
+                    }
+
         
                 ]
             }

@@ -357,6 +357,17 @@
             
         } */
      
+        /* .contenedora{
+            display: flex;
+            align-items: flex-start;
+            justify-content: center;
+            width: 100%;
+            
+        }
+        .contenedora section{
+            width: 100%;
+            margin-left: 180px;
+        }  */
         .nuevoIntento{
             display: flex;
             position: relative;
