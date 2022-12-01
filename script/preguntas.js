@@ -494,11 +494,7 @@
                         {
                             "respuesta":"Dórico",
                             "correcta":""
-                        },
-                        {
-                            "respuesta":"Italia",
-                            "correcta":""
-                        } 
+                        }
                     ]
         
                 },
@@ -525,22 +521,18 @@
                 /*Quinta pregunta */
                 {
                     "tipo":"multiple",
-                    "pregunta":"Nombre de los barcos que componían la expedición de Colón",
+                    "pregunta":"Colores primarios",
                     "respuestas":[
                         {
-                            "respuesta":"Santa Maria",
+                            "respuesta":"Magenta,amarillo,azul",
                             "correcta":"si"
                         },
                         {
-                            "respuesta":"Triana",
+                            "respuesta":"Rojo,verde,amarillo,azul",
                             "correcta":""
                         },
                         {
-                            "respuesta":"Pinta",
-                            "correcta":"si"
-                        },
-                        {
-                            "respuesta":"Niña",
+                            "respuesta":"Rojo,azul,amarillo",
                             "correcta":"si"
                         }
                     ]
@@ -568,19 +560,19 @@
                 //Septima pregunta
                 {
                     "tipo":"simple",
-                    "pregunta":"¿Cuál es el país con más habitantes del mundo?",
+                    "pregunta":"¿En que siglo nació Velázquez?",
                     "respuestas":[
                         {
-                            "respuesta":"España",
+                            "respuesta":"XVIII",
                             "correcta":""
                         },
                         {
-                            "respuesta":"China",
+                            "respuesta":"XVII",
                             "correcta":"si"
         
                         },
                         {
-                            "respuesta":"Italia",
+                            "respuesta":"XVI",
                             "correcta":""
                         }
                     ]
@@ -588,19 +580,19 @@
                 //Optava
                 {
                     "tipo":"simple",
-                    "pregunta":"¿Dónde está Transilvania?",
+                    "pregunta":"¿En quçe museo esta la Mona Lisa",
                     "respuestas":[
                         {
-                            "respuesta":"Bulgaria",
+                            "respuesta":"Museo del Prado",
                             "correcta":""
                         },
                         {
-                            "respuesta":"Rumania",
+                            "respuesta":"Louvre",
                             "correcta":"si"
         
                         },
                         {
-                            "respuesta":"Grecia",
+                            "respuesta":"Galeria Uffizi",
                             "correcta":""
                         }
                     ]
@@ -608,19 +600,19 @@
                 //Novena
                 {
                     "tipo":"simple",
-                    "pregunta":" ¿En qué año cayó el muro de Berlín?",
+                    "pregunta":" ¿En qué siglo nació Van Gogh",
                     "respuestas":[
                         {
-                            "respuesta":"1979",
+                            "respuesta":"XX",
                             "correcta":""
                         },
                         {
-                            "respuesta":"1989",
+                            "respuesta":"XIX",
                             "correcta":"si"
         
                         },
                         {
-                            "respuesta":"1879",
+                            "respuesta":"XVIII",
                             "correcta":""
                         }
                     ]
@@ -628,19 +620,19 @@
                 //Decima
                 {
                     "tipo":"simple",
-                    "pregunta":"¿Qué día es la fiesta nacional de los Estados Unidos?",
+                    "pregunta":"¿En qué siglo se inició el Renacimiento?",
                     "respuestas":[
                         {
-                            "respuesta":"7 de Julio",
+                            "respuesta":"XVI",
                             "correcta":""
                         },
                         {
-                            "respuesta":"4 de Julio",
+                            "respuesta":"XV",
                             "correcta":"si"
         
                         },
                         {
-                            "respuesta":"5 de Julio",
+                            "respuesta":"XIV",
                             "correcta":""
                         }
                     ]

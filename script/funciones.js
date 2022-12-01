@@ -218,7 +218,7 @@ window.onload = function(){
             let divContenidoCorrecion = document.createElement("div");
             divContenidoCorrecion.classList.add("cuerpoCorrecion");
             
-            var contadorCorrectas=1;
+            var contadorCorrectas=0;
             var contadorIncorrectas=0;
             var contChechBox=0;
             
@@ -246,6 +246,7 @@ window.onload = function(){
                     if(respuesta.children[0].checked && respuesta.children[0].value=="si"){
                         respuesta.children[1].style.backgroundColor="rgb(103, 235, 103)";
                         respuesta.style.backgroundColor="rgb(103, 235, 103)";
+                      
                         if(respuesta.children[0].type=="radio"){
                             contadorCorrectas++;
                             spanCorrecion.textContent="1";
