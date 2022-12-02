@@ -11,6 +11,7 @@
             
             overflow-x: hidden;
         }
+        /*Estilos al Encabezado*/
         header{
             background-image:url("../imagenes/preguntados2.png");
             background-color:var(--color-encabezado);
@@ -39,6 +40,7 @@
         nav,.contenido, .encabezadoMateria, .panelResultados{
             font-family: var(--fuente-principal);
         }
+        /*Estilos al navegador*/
         nav,
         .materias{
             display: flex;
@@ -60,6 +62,7 @@
            
             
         }
+        /*Estilo a las materias de dentro de nav*/
         .materias{
            background-color: (177,178,255);
            cursor: pointer;
@@ -70,16 +73,16 @@
         .materias:hover{
             background-color: var(--color-letraNav);
             color: white;
-            /* border: 2px solid #6e70f6; */
-            /* border-radius: 80%; */
+           
         }
+        /*Clase de persistencia, llamda desde js*/
         .persiste{
             background-color: var(--color-letraNav);
             color: white;
-            /* border: 2px solid #6e70f6; */
-            /* border-radius: 10%; */
+
         }
-        
+
+        /*Cuerpo del cuestionario*/
         section{
             display: flex;
             flex-direction: column;
@@ -90,6 +93,8 @@
             
        
         }
+
+        /*Encabezado del cuerpo del cuestionario*/
         .encabezadoMateria{
             
             display: flex;
@@ -100,18 +105,18 @@
             font-size: 1.6em;
             border-bottom: 6px solid #6e70f6;
         }
-        @keyframes imagenAnimada {
-            
-        }
+       
         .encabezadoMateria :first-child{
             height: 50px;
             
         }
+        /*Cuerpo del section*/
         section .contenido{
             width: 80%;
             padding-bottom: 20px;
  
         }
+        /*Estilos de cada uno de los article que sera el contenedor de cada pregunta*/
         article{
             display: flex;
             flex-direction: column;
@@ -125,6 +130,7 @@
             border-radius: 18px 18px 18px 18px;
             
         }
+        /*Pregunta*/
         .encabezadoPregunta h3{
             display: inline;
             
@@ -136,6 +142,7 @@
             padding: 7px;
             font-size: 1.3em;
         } 
+        /*Respuestas estilos*/
         .opcion label {
             font-size: 1.1em;
             user-select: none;
@@ -155,14 +162,12 @@
         .opcion:hover{
             background-color: var(--color-bordes);
         }
-        /* .opcion:checked+label{
-            background-color: var(--color-bordes);
-        } */
+        
         input[type="radio"]:checked+label{
             background-color: var(--color-bordes);
         }
 
-
+        /*Estilos para el bton*/
         button{
             padding: 10px;
             font-size: 1.2em;
@@ -178,6 +183,7 @@
             background-color: var(--color-fondo-panel);
         }
 
+        /*Parte de la correcion*/
          .encabezadoPregunta span{
             background-color: #6e70f6;
             color: white;
@@ -219,6 +225,7 @@
             right: -9px;
         }
 
+        /*Clase que que le da estilos al div que se pondra por delante del nav*/
 
         .ocultaNav{
             width: 100vw;
@@ -230,7 +237,7 @@
        
        
         
-        /*!!!!!!!!!!!!!!!!!!!!*/
+        /*!Panel de inicio*/
         
         .panelBienvenido{
             min-width: 500px;
@@ -261,10 +268,8 @@
         }
         .imagenesAdicionales{
             width: 30%;
-
             display: flex;
             flex-direction: row;
-            /* flex-wrap:wrap ; */
             gap: 30px;
             align-items: flex-start;
             justify-content: center;
@@ -278,8 +283,9 @@
             top:25px;
             
         }
+ 
        
-/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! Parte de correccion */
+/* Parte de correccion */
 
 /*Le doy posicionamiento para que me saqe los resultados del flujo estandar y me lo suba arriba de la pagina*/
         .clonado{
@@ -303,6 +309,7 @@
             top: 300px;
         }
 
+        /*Estilos del encabezado de la correccion*/
         .encabezadoPreguntaCorreccion{
             display: flex;
             flex-direction:row ;
@@ -339,6 +346,7 @@
             width: 50px;
         }
 
+        /*El cuadro de la correción donde aparecen los resultados*/
 
          div.resultados {
             display: flex;
@@ -348,29 +356,47 @@
             justify-content: center;
         
         }
-        /* article .h3Correcion {
+        .resultadoNotas{
+        
+            width: 50%;
+            height: 260px;
+            background-image: url(../imagenes/portada.jpg);
+            background-repeat: no-repeat;
+            /* background-position: center; */
+            background-size: cover;
+            border-radius: 7%;
+            position: absolute;
+            
+           }
+           .resultadoNotas div{
             display: flex;
+            justify-content: center;
+            align-items: center;
             flex-direction: column;
             gap: 15px;
-            flex-wrap: wrap;
-            background-color: var(--color-fondo-panel);
-            margin: 15px;
-            padding: 20px;
-            min-width: 540px;
-            
-        } */
-     
-        /* .contenedora{
-            display: flex;
-            align-items: flex-start;
-            justify-content: center;
             width: 100%;
+            height: 260px;
+            border-radius: 7%;
+            background-color: rgba(214, 214, 214, 0.405);
+            backdrop-filter: blur(3px);
+            text-shadow: 0.1em 0.1em 0.2em black;
             
-        }
-        .contenedora section{
-            width: 100%;
-            margin-left: 180px;
-        }  */
+    
+           }
+           .resultadoNotas h2{
+            font-size: 2.2em;
+            font-family: var(--fuente-principal);
+            color: white;
+            letter-spacing: 15px;
+           }
+           .resultadoNotas p{
+            font-size: 1.7em;
+            color: white;
+            text-transform: capitalize;
+           }
+
+           /*Estilos para unos botones nuevos de nuevo intento y volver*/
+        
         .nuevoIntento{
             display: flex;
             position: relative;
@@ -391,6 +417,7 @@
             list-style: none;
         }
    
+        /*Estilos para los elementos i que se han sacado de una pagina externa*/
         i{
             position: absolute;
             right: 10px;
@@ -411,42 +438,4 @@
         justify-content: center;
         align-items: center;
        }
-       .resultadoNotas{
-        
-        width: 50%;
-        height: 260px;
-        background-image: url(../imagenes/portada.jpg);
-        background-repeat: no-repeat;
-        /* background-position: center; */
-        background-size: cover;
-        /* background-color: var(--color-navegador); */
-        border-radius: 7%;
-        position: absolute;
-        
-       }
-       .resultadoNotas div{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        gap: 15px;
-        width: 100%;
-        height: 260px;
-        border-radius: 7%;
-        background-color: rgba(214, 214, 214, 0.405);
-        backdrop-filter: blur(3px);
-        text-shadow: 0.1em 0.1em 0.2em black;
-        
-
-       }
-       .resultadoNotas h2{
-        font-size: 2.2em;
-        font-family: var(--fuente-principal);
-        color: white;
-        letter-spacing: 15px;
-       }
-       .resultadoNotas p{
-        font-size: 1.7em;
-        color: white;
-        text-transform: capitalize;
-       }
+       
