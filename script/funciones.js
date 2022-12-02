@@ -45,7 +45,7 @@ window.onload = function(){
         
        
         //Funciones
-       
+       //Elegir una opcion en el navegador
         function eleccion(){
             var contPreg = 1;
             var contRespuesta=0;
@@ -122,7 +122,6 @@ window.onload = function(){
                 let contenido = document.createTextNode(pregunta.pregunta);
                 h3.appendChild(contenido);
                 divEncabezadoContenido.appendChild(h3);
-                // h3.textContent=pregunta.pregunta;
                 let tipoRespuesta = document.createElement("span");
                 tipoRespuesta.textContent=pregunta.tipo;
                 divEncabezadoContenido.appendChild(tipoRespuesta);
@@ -184,10 +183,10 @@ window.onload = function(){
         }
       
         
-       
+       //En el caso de hacer click en el boton de corregir
         //Funcion
         function corrige(){
-
+            //Necesario para que suba hasta arriba del todo, al hacer click
             window.scrollTo({
                 top:0,
                 left:0,
@@ -276,8 +275,8 @@ window.onload = function(){
                     divContenidoCorrecion.appendChild(fragmentParcial);    
                 }
 
-
-                let divNotas = document.createElement("div");
+            //Resultados de la correción
+            let divNotas = document.createElement("div");
             let divA = document.createElement("div");
             divNotas.classList.add("resultadoNotas");
             let h2Notas = document.createElement("h2");
@@ -309,17 +308,16 @@ window.onload = function(){
                     boton.addEventListener("click",retornoEstado);
                 fragment.appendChild(divContenidoCorrecion);
 
-                
+                //El test que se cargará spbre el original tapandolo
                 const nuevoTest= document.querySelector("section").cloneNode(true);
                 seccion.style.display="none";
                 const nuevaSeccion = document.createElement("section");
                 nuevaSeccion.classList.add("nueva");
                 document.body.appendChild(nuevaSeccion);
-            /* borro todo lo que estaba en seccion anteriormente*/
-           // seccion.innerText="";
+           
             /*Añado el fragment a la seccion*/
             nuevaSeccion.appendChild(fragment);
-            
+          //Al hacer click en volver, dará con las preguntas marcadas, como estaban antes de hacer click en resolver  
         function retornoEstado(){
             window.scrollTo({
                 top:0,
@@ -334,7 +332,7 @@ window.onload = function(){
             seccion.style.width="100%";
             navegadorTransparente.style.display= "none";
         }
-
+        //Creará un nuevo cuestionario
         function nuevoCuestionario(){
             window.scrollTo({
                 top:0,
